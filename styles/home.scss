@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
 .home_main {
   width: 100vw;
   height: 100vh;
@@ -6,4 +11,69 @@
   background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
       linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
   background-size: 55px 55px;
+}
+
+/* Base styles for home_heading and home_heading_wegrow */
+#home_heading,
+#home_heading_wegrow {
+  font-size: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10vh;
+  line-height: 90px;
+  font-family: "Poppins", sans-serif;
+  text-align: center; /* Center the text horizontally */
+  transition: font-size 0.5s ease; /* Add transition effect for font size */
+}
+
+#home_heading_wegrow {
+  padding-top: 1rem;
+}
+
+/* Hover effect */
+#home_heading:hover,
+#home_heading_wegrow:hover {
+  font-size: 110px; /* Increase font size on hover */
+  color: #37ff8b; /* Change text color on hover */
+}
+
+/* Animation for decreasing font size */
+@keyframes decreaseFontSize {
+  0% {
+    font-size: 110px;
+  }
+  100% {
+    font-size: 90px;
+  }
+}
+
+#home_heading:not(:hover),
+#home_heading_wegrow:not(:hover) {
+  animation: decreaseFontSize 0.5s ease; /* Apply animation for font size decrease */
+}
+
+/* Media query for smaller screen sizes */
+@media screen and (max-width: 768px) {
+  #home_heading {
+    font-size: 60px;
+    padding-top: 5vh;
+    line-height: 60px;
+  }
+
+  #home_heading_wegrow {
+    font-size: 60px;
+  }
+}
+
+/* Media query for even smaller screen sizes */
+@media screen and (max-width: 480px) {
+  #home_heading {
+    font-size: 40px;
+    padding-top: 3vh;
+    line-height: 40px;
+  }
+
+  #home_heading_wegrow {
+    font-size: 40px;
+  }
 }

@@ -3,10 +3,9 @@ import '../styles/home.scss'
 const Home = () => {
   return (
     <div class='home_main'>
-    Home
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+
+      <h1 id="home_heading">You Grow</h1>
+       <h1 id="home_heading_wegrow">We Grow</h1>
     </div>
   )
 }
