@@ -12,6 +12,7 @@ export default function App() {
     <Router>
       <Header />
       <Routes>
+         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
          <Route path="/aboutus" element={<Aboutus />} />
          <Route path="/notes" element={<Notes />} />
