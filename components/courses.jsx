@@ -9,7 +9,7 @@ const Courses = () => {
   const [loading, setLoading] = useState(true);
 
   const getdata = () => {
-    fetch("/assets/data.json", {
+    fetch("../public/data.json", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
