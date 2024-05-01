@@ -1,0 +1,108 @@
+.main_div{
+  --color: #E1E1E1;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+}
+
+#Heading_Notes{
+  text-align: center;
+  padding-top : 2%;
+  padding-bottom : 1%;
+  font-size : 50px;
+}
+
+#notes_subject_name{
+  text-align: center;
+  font-size : 30px;
+  color: #267459;
+  font-weight: bold;
+  text-decoration : underline;
+  padding-bottom : 2%;
+}
+
+#notes_unit_heading{
+  text-align : center;
+  background : #3b81f4;
+  color : white;
+  font-size : 20px;
+}
+
+#notes_unit_link {
+  padding-top: 2%;
+  text-align: center;
+  margin-bottom: 3vh;
+  display: block;
+  line-height: 40px;
+  font-size: 40px;
+  color: white;
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+#notes_unit_link:hover {
+  transform: scale(1.4); /* Increase size by 20% on hover */
+}
+
+
+.Notes_unit {
+  background: #0f172a;
+  width: 50%; /* Adjust the width as needed */
+  margin: 0 auto; /* This will center the div horizontally */
+
+  justify-content : center;
+  margin-bottom : 10px;
+}
+
+#must_do_heading {
+  color:white;
+  text-align : center;
+  font-size : 30px;
+  background : #3b81f4;
+}
+
+#must_do_link {
+  color:white;
+  text-align : center;
+  font-size : 30px;
+  transition: transform 0.3s ease;
+  margin-top : 2%;
+}
+#must_do_link:hover {
+  transform: scale(1.4); /* Increase size by 20% on hover */
+}
+
+#Notes_MidSem_heading {
+  margin-top : 4%;
+  width : 100%;
+  color:white;
+  text-align : center;
+  font-size : 30px;
+  background : #3b81f4;
+}
+#Notes_MidSem_linking 
+{
+  margin-top: 2%;
+  color:white;
+  text-align : center;
+  font-size : 30px;
+  transition: transform 0.3s ease;
+}
+
+#Notes_MidSem_linking:hover {
+  transform: scale(1.4); /* Increase size by 20% on hover */
+}
+
+#syllabus {
+  text-align : center;
+  font-size : 50px;
+  margin-top : 5%;
+}
+
+#notes_unit_syllabus {
+  text-align : center;
+  font-size : 20px;
+  margin-bottom : 2%;
+  margin-left : 2%;
+  margin-right : 2%;
+}

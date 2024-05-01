@@ -23,7 +23,7 @@
   line-height: 90px;
   font-family: "Poppins", sans-serif;
   text-align: center; /* Center the text horizontally */
-  transition: font-size 0.5s ease; /* Add transition effect for font size */
+  transition: font-size 0.7s ease; /* Add transition effect for font size */
 }
 
 #home_heading_wegrow {
@@ -49,7 +49,7 @@
 
 #home_heading:not(:hover),
 #home_heading_wegrow:not(:hover) {
-  animation: decreaseFontSize 0.5s ease; /* Apply animation for font size decrease */
+  animation: decreaseFontSize 0.7s ease; /* Apply animation for font size decrease */
 }
 
 /* Media query for smaller screen sizes */
