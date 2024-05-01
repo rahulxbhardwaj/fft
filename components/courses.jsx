@@ -2,19 +2,14 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import classNames from "classnames";
 import "../styles/courses.scss";
-import PaymentQr from "../public/paymentqr.png";
+import PaymentQr from "../public/paymentqr.png"; // Make sure this path is correct
 
 const Courses = () => {
   const [subjects, setSubjects] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const getdata = () => {
-    fetch("../public/data.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
+    fetch("/data.json") // Change the path to fetch data.json from the public folder
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
