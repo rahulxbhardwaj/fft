@@ -1,6 +1,15 @@
+#course_subject_name{
+  text-align:center;
+  color : green;
+  padding-top : 15px;
+  transition: all 0.5s ease;
+  // background-color : 
+}
 
-
-
+#course_subject_name:hover {
+  color: blue; 
+   transform: scale(1.5);
+}
 
 
 

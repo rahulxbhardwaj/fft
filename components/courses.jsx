@@ -36,7 +36,7 @@ const Courses = () => {
 
   return (
     <>
-      <div>
+      <div class="Home_main">
         {Object.keys(subjects).map((id, index, array) => (
           <div
             key={id}
@@ -49,9 +49,12 @@ const Courses = () => {
               }
             )}
           >
+            <h1 id="course_subject_name">
             <Link to={`/notes/${id}`} passHref>
               {subjects[id].Subject}
             </Link>
+            </h1>
+            
           </div>
         ))}
       </div>

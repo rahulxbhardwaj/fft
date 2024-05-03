@@ -1,10 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Jersey+25+Charted&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Jaro:opsz@6..72&family=Jersey+25+Charted&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 1rem;
+}
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
 
-.home_main {
-  width: 100vw;
+.content {
+  flex: 1;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.image {
+  flex: 1;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.batch-overview {
+  flex: 2; /* Increased size for Batch Overview */
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ffa31a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ffa31a;
+}
+
+.end-sem {
+  color: orange;
+}
+
+.Home_main {
   height: 100vh;
   --color: #E1E1E1;
   background-color: #F3F3F3;
@@ -13,67 +73,87 @@
   background-size: 55px 55px;
 }
 
-/* Base styles for home_heading and home_heading_wegrow */
-#home_heading,
-#home_heading_wegrow {
-  font-size: 90px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10vh;
-  line-height: 90px;
-  font-family: "Poppins", sans-serif;
-  text-align: center; /* Center the text horizontally */
-  transition: font-size 0.7s ease; /* Add transition effect for font size */
+.tushika_didi {
+  color: #4f46e5;
+  font-size: 70px;
 }
 
-#home_heading_wegrow {
-  padding-top: 1rem;
-}
+.home_page_batch_1 {
+  text-align: center;
+  padding: 2%;
 
-/* Hover effect */
-#home_heading:hover,
-#home_heading_wegrow:hover {
-  font-size: 110px; /* Increase font size on hover */
-  color: #37ff8b; /* Change text color on hover */
-}
-
-/* Animation for decreasing font size */
-@keyframes decreaseFontSize {
-  0% {
-    font-size: 110px;
-  }
-  100% {
-    font-size: 90px;
-  }
-}
-
-#home_heading:not(:hover),
-#home_heading_wegrow:not(:hover) {
-  animation: decreaseFontSize 0.7s ease; /* Apply animation for font size decrease */
-}
-
-/* Media query for smaller screen sizes */
-@media screen and (max-width: 768px) {
-  #home_heading {
-    font-size: 60px;
-    padding-top: 5vh;
-    line-height: 60px;
-  }
-
-  #home_heading_wegrow {
-    font-size: 60px;
-  }
-}
-
-/* Media query for even smaller screen sizes */
-@media screen and (max-width: 480px) {
-  #home_heading {
+  li {
     font-size: 40px;
-    padding-top: 3vh;
-    line-height: 40px;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #6bfdfa;
+  }
+}
+
+.batch_overview {
+  margin-top: 3%;
+  text-align: center;
+  font-size: 80px;
+  padding-top: 20px;
+  text-decoration: underline;
+  color: white;
+  font-family: "Jersey 25 Charted", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes bounce {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-20px); }
+  100% { transform: translateX(0); }
+}
+
+.oneshot_endsem_papers {
+  font-size: 30px;
+  animation: bounce 0.5s infinite; 
+}
+
+.home_page2 {
+  width: 100%;
+  height: 100%;
+
+  background: #000000;
+  --gap: 5em;
+  --line: 1px;
+  --color: rgba(255, 255, 255, 0.2);
+
+  background-image: linear-gradient(
+      -90deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    ),
+    linear-gradient(
+      0deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    );
+  background-size: var(--gap) var(--gap);
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
   }
 
-  #home_heading_wegrow {
-    font-size: 40px;
+  .content,
+  .image,
+  .batch-overview {
+    flex: none;
+    width: 100%;
   }
+}
+
+.home_page_photo{
+  border : 1px solid #ffa527;
+  border-radius : 1rem;
 }
