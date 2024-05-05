@@ -1,19 +1,32 @@
-#course_subject_name{
-  text-align:center;
-  color : green;
-  padding-top : 15px;
-  transition: all 0.5s ease;
-  // background-color : 
+.subject-container {
+  display: inline-block;
+  border: 2px solid transparent; /* Border width */
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: border-color 0.5s ease;
+}
+
+.subject-container:hover {
+  border-color: black;
+}
+
+#course_subject_name {
+  text-align: center;
+  color: #AF21EB;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: color 0.5s ease, transform 0.5s ease;
 }
 
 #course_subject_name:hover {
-  color: blue; 
-   transform: scale(1.5);
+  color: #2157EB;
+  transform: scale(1.2);
 }
 
-
-
-
+.Home_main {
+  height: auto;
+  text-align: center;
+}
 
 
 //___________________Pay Here Css _________________________

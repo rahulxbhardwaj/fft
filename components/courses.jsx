@@ -50,9 +50,11 @@ const Courses = () => {
             )}
           >
             <h1 id="course_subject_name">
+              <div class="subject-container">
             <Link to={`/notes/${id}`} passHref>
               {subjects[id].Subject}
             </Link>
+              </div>
             </h1>
             
           </div>
