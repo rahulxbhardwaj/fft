@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/home.scss";
 import TushikaPhoto from '../public/assets/tushika_fft.jpg';
 
 function App() {
+  const [studentCount, setStudentCount] = useState(1700);
+
+  useEffect(() => {
+    if (studentCount < 2000) {
+      const interval = setInterval(() => {
+        setStudentCount(prevCount => prevCount + 1);
+      }, 10);
+
+      return () => clearInterval(interval);
+    }
+  }, [studentCount]);
+
   return (
     <div className="App" class="Home_main">
+
       <div className="container">
         <div className="content">
           <h1>
@@ -16,26 +29,46 @@ function App() {
               <h5 className="text-2xl">Join IPU Smasher Course</h5>
             </button>
           </a>
-
         </div>
         <div className="image"> 
-          <img src={TushikaPhoto}
-            alt="Placeholder image" class="home_page_photo"
-          />
-          
+          <img src={TushikaPhoto} alt="Placeholder image" class="home_page_photo" />
         </div>
       </div>
+
       <div className="batch-overview" class="home_page2">
-          <h2 class="batch_overview">fifteenforteen</h2>
-          <ul class="home_page_batch_1">
-              <li>Welcome to Fifteen for teen,</li>
-              <li>Elevate Your College Experience</li>
-              <li>Embark on a transformative journey where education meets inspiration at Fifteen for teens. We're not just an educational firm; we're architects of your academic success and personal growth.</li>
-              <li>🎓 College-Centric Learning: Immerse yourself in meticulously crafted resources tailored for college triumph.</li>
-              <li>💡 Innovation in Education: Embrace the future with our pioneering methodologies and cutting-edge approaches.</li>
-              <li>🌐 Global Perspectives: Navigate a dynamic curriculum that mirrors the evolving global landscape, preparing you for success on an international scale.</li>
-              <li>👥 Community and Collaboration: Connect, collaborate, and thrive alongside like-minded individuals who share your passion for knowledge and growth.</li>
+        <h2 class="batch_overview">fifteenforteen</h2>
+        <ul class="home_page_batch_1">
+          <li>Welcome to College Journey</li>
+          <li>Elevate: Personal Growth</li>
+          <li>Transformative: Education-Inspiration Blend</li>
+          <li>College-Centric: Tailored Resources</li>
+          <li>Innovation: Cutting-Edge Methods</li>
+          <li>Global Perspectives: Dynamic Curriculum</li>
+          <li>Community: Collaborative Thrive</li>
+        </ul>
+
+        <div className="home_page_2">
+          <h1 class="our_students">Our Students are from :-</h1>
+          <ul class="list">
+            <li>ADGIT</li>
+            <li>VIPS</li>
+            <li>GNIT</li>
+            <li>BPIT</li>
+            <li>GTBIT</li>
+            <li>MAIT</li>
+            <li>MSIT</li>
+            <li>USICT</li>
+            <li>TRINITY</li>
+            <li>IIMT</li>
+            <li>HMR</li>
+            <li>DTC</li>
+            <li>USAR</li>
+            <li>JIMS</li>
+            <li>SBIT</li>
+            <li>KCC</li>
           </ul>
+          <p className="animate__animated animate__fadeInUp" class="student_inc">A growing community of {studentCount}+ students</p>
+        </div>
       </div>
 
     </div>
