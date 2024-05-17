@@ -1,185 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Poppins;
-}
-
-.section-white {
-  background: #fff;
-  padding: 70px 0;
-}
-
-.section-title {
-  margin-bottom: 20px;
-  font-size: 36px;
-  font-weight: bold;
-  color: #3956de; /* Highlight color */
-  text-align: center; /* Center align */
-}
-
-.section-title-left {
-  margin-bottom: 20px;
-  font-size: 36px;
-  font-weight: bold;
-  color: #3956de; /* Highlight color */
-}
-
-.section-subtitle {
-  white-space: pre-line;
-  font-size: 18px;
-  color: #454545; /* Message text color */
-  text-align: center; /* Center align */
-  margin-bottom:40px;
-}
-
-#message{
-  background:#2BF5AB;
-  color:#0F69F5;
-  font-size:25px;
-  padding:2vh;
-}
-
-.home-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.profile-card {
-  position: relative;
-  width: 220px;
-  height: 220px;
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 50%;
-  box-shadow: -5px 8px 45px rgba(51, 51, 51, 0.126);
-  transition: all .4s;
-  margin: 0 20px;
-}
-
-.profile-card:hover {
-  border-radius: 10px;
-  height: 260px;
-}
-
-.profile-card .img {
-  position: relative;
+.aboutus_main {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  background: #000000;
+  --gap: 5em;
+  --line: 1px;
+  --color: rgba(255, 255, 255, 0.2);
+  background-image: linear-gradient(
+      -90deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    ),
+    linear-gradient(
+      0deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    );
+  background-size: var(--gap) var(--gap);
 }
 
-.profile-card:hover img {
-  border-radius: 10px;
-  transform: translateY(-70px);
+.whoweare {
+  color: #f6f8ed;
+  padding-top: 5%;
+  // padding-left: 5%;
+  font-size: 8vw; /* Relative unit for responsiveness */
+  line-height: 1.05em;
+  text-decoration: underline;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: color 0.4s ease-in, font-size 0.4s ease-in;
+  text-align : center;
 }
 
-.img img {
-  object-fit: fill;
-  width: 100%;
-  border-radius: 50%;
-  transition: all .4s;
-  z-index: 99;
+.whoweare:hover {
+  color: #c4efb6;
+  font-size: 10vw; /* Relative unit for responsiveness */
 }
 
-.caption {
-  text-align: center;
-  transform: translateY(-90px);
-  opacity: 0;
-  pointer-events: none;
-  transition: all .5s;
+/* Media Queries for different screen sizes */
+@media (max-width: 1200px) {
+  .whoweare {
+    font-size: 9vw;
+  }
+
+  .whoweare:hover {
+    font-size: 11vw;
+  }
 }
 
-.profile-card:hover .caption {
-  opacity: 1;
-  pointer-events: all;
-}
-
-.caption h3 {
-  font-size: 21px;
-  color: #0c52a1;
-  font-weight: 600;
-}
-
-.caption p {
-  font-size: 15px;
-  font-weight: 500;
-  margin: 2px 0 12px 0;
-}
-
-.caption .social-links i {
-  font-size: 21px;
-  margin: 0 3px;
-  cursor: pointer;
-  color: #333;
-  transition: all .4s;
-}
-
-.caption .social-links i:hover {
-  color: #0c52a1;
-}
-
-/* Add media queries for responsiveness */
 @media (max-width: 768px) {
-  .profile-card {
-    width: 180px;
-    height: 180px;
-    padding: 20px;
+  .whoweare {
+    font-size: 12vw;
   }
 
-  .profile-card:hover {
-    height: 220px;
-  }
-
-  .profile-card .img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .profile-card:hover img {
-    transform: translateY(-50px);
-  }
-
-  .caption h3 {
-    font-size: 18px;
-  }
-
-  .caption p {
-    font-size: 14px;
-  }
-
-  .caption .social-links i {
-    font-size: 18px;
+  .whoweare:hover {
+    font-size: 14vw;
   }
 }
 
 @media (max-width: 480px) {
-  .home-container {
-    flex-direction: column;
+  .whoweare {
+    font-size: 15vw;
   }
 
-  .profile-card {
-    margin: 20px 0;
-    width: 150px;
-    height: 150px;
-    padding: 15px;
-  }
-
-  .profile-card:hover {
-    height: 190px;
-  }
-
-  .caption h3 {
-    font-size: 16px;
-  }
-
-  .caption p {
-    font-size: 12px;
-  }
-
-  .caption .social-links i {
-    font-size: 16px;
+  .whoweare:hover {
+    font-size: 18vw;
   }
 }

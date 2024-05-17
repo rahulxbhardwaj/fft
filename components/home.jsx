@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/home.scss";
 import TushikaPhoto from '../public/assets/tushika_fft.jpg';
+import Fft_logo from '../public/assets/fft_logo.jpg';
 
 function App() {
   const [studentCount, setStudentCount] = useState(1700);
