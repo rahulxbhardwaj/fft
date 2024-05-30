@@ -25,11 +25,12 @@ function App() {
             GET <span className="end-sem">END SEM</span> READY With <b><span class="tushika_didi">Tushika Didi</span></b>
           </h1>
           <p class="oneshot_endsem_papers">OneShot Endsem Papers ! !</p>
-          <a href="https://www.youtube.com/@15FORTEEN">
+          <a href="https://forms.gle/mvzawUQX9rNfsmrU7">
             <button className="btn">
-              <h5 className="text-2xl">Join IPU Smasher Course</h5>
+              <h5 className="text-4xl">Join IPU Smasher Course</h5>
             </button>
           </a>
+           <p class="oneshot_endsem_papers">EARLY BIRD DISCOUNT ! !</p>
         </div>
         <div className="image"> 
           <img src={TushikaPhoto} alt="Placeholder image" class="home_page_photo" />
