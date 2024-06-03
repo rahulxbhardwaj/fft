@@ -24,13 +24,13 @@ function App() {
           <h1>
             GET <span className="end-sem">END SEM</span> READY With <b><span class="tushika_didi">Tushika Didi</span></b>
           </h1>
-          <p class="oneshot_endsem_papers">OneShot Endsem Papers ! !</p>
+          <p class="oneshot_endsem_papers">Complete Syllabus in just 5-6 Hr</p>
           <a href="https://forms.gle/mvzawUQX9rNfsmrU7">
             <button className="btn">
-              <h5 className="text-4xl">Join IPU Smasher Course</h5>
+              <h5 className="text-4xl">Join IPU Smasher Series</h5>
             </button>
           </a>
-           <p class="oneshot_endsem_papers">EARLY BIRD DISCOUNT ! !</p>
+           <p class="oneshot_endsem_papers">with 2 Bonus endsem solutions</p>
         </div>
         <div className="image"> 
           <img src={TushikaPhoto} alt="Placeholder image" class="home_page_photo" />
