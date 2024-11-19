@@ -14,10 +14,11 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   max-width: 960px;
-  margin: 0 auto;
+   margin: 0 ;
+  margin-left : 20vw;
 }
 
 .content {
@@ -29,15 +30,20 @@
 
 .image {
   flex: 1;
-  padding: 1rem;
+  padding: 5rem;
+  padding-left : 17rem;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
 }
 
 .image img {
-  max-width: 100%;
-  height: auto;
+  max-width: 300%; /* Ensure the image scales with its container */
+  height: auto; /* Maintain aspect ratio */
+  border: 1px solid #ffa527;
+  border-radius: 1rem;
+  display: block; /* Avoid inline image spacing issues */
+  object-fit: cover; /* Ensures the image fills its space gracefully */
 }
 
 .batch-overview {
@@ -78,7 +84,7 @@ h1 {
 
 .tushika_didi {
   color: #4f46e5;
-  font-size: 70px;
+  font-size: 50px;
 }
 
 .home_page_batch_1 {
@@ -149,10 +155,26 @@ h1 {
   }
 
   .content,
-  .image,
   .batch-overview {
     flex: none;
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .image {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .image img {
+    max-width: 90%; /* Slightly smaller image for better fit */
+    margin: 0 auto; /* Center the image */
+  }
+}
+
+@media (max-width: 480px) {
+  .image img {
+    max-width: 100%; /* Full-width on very small screens */
   }
 }
 

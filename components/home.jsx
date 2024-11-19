@@ -22,21 +22,23 @@ function App() {
       <div className="container">
         <div className="content">
           <h1>
-            GET <span className="end-sem">END SEM</span> READY With <b><span class="tushika_didi">Tushika Didi</span></b>
+            <span className="end-sem">Conquer Your End-Sem</span> Exams in Record Time! <b><span class="tushika_didi">Tushika Didi</span></b>
           </h1>
           <p class="oneshot_endsem_papers">Complete Syllabus in just 5-6 Hr</p>
-          <a href="https://forms.gle/mvzawUQX9rNfsmrU7">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqwdTXI4RZCGD0KirnwJ-XsSJYCcIXD56K6eg63S-WliqkYg/viewform">
             <button className="btn">
-              <h5 className="text-4xl">Join IPU Smasher Series</h5>
+              <h5 className="text-4xl">Join SIGMA</h5>
             </button>
           </a>
-           <p class="oneshot_endsem_papers">with 2 Bonus endsem solutions</p>
+           {/* <p class="oneshot_endsem_papers">with 2 Bonus endsem solutions</p> */}
         </div>
         <div className="image"> 
           <img src={TushikaPhoto} alt="Placeholder image" class="home_page_photo" />
         </div>
       </div>
 
+
+      
       <div className="batch-overview" class="home_page2">
         <h2 class="batch_overview">fifteenforteen</h2>
         <ul class="home_page_batch_1">
