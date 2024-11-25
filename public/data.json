@@ -110,7 +110,7 @@
         }
       },
       "Must do": {
-        "pdf": "https://drive.google.com/file/d/13TxPhPDomEflcpX9DdHzRropIhsZ8wEX/view"
+        "pdf": "https://drive.google.com/file/d/1ZogmxhHwmSvgbKCaN0G_pl4fG_DB2Dgm/view?usp=sharing"
       },
       "Mid-Sem": {
         "pdf": "https://drive.google.com/file/d/1HPftQgRWtc7D_2HPShkcHd_63VFlBAIL/view"
@@ -238,7 +238,7 @@
         }
       },
       "Must do": {
-        "pdf": "https://drive.google.com/file/d/1R7p-0ySDq8135-kO1FcQA3aTHBuZ2fSy/view"
+        "pdf": "https://drive.google.com/file/d/1ZogmxhHwmSvgbKCaN0G_pl4fG_DB2Dgm/view?usp=sharing"
       },
       "Mid-Sem": {
         "pdf": "https://drive.google.com/file/d/1ENXNwnwT1Rh6uHvNXbaUAKq5CDKgLqxl/view"
@@ -347,6 +347,46 @@
         "units2": "Environmental Pollution: (a) Air Pollution: Source, Types, effects on biosphere and Meterology, Air Quality, Control, (b) Water Pollution: Types and Sources, (c) Soil Pollution: Types and Control, (d) Noise Pollution: Effect, Control, (e) Thermal Pollution, (f) Radiation Pollution, (g) Solid waste Management, (h) Pollution Prevention, (i) Disaster Management",
         "units3": "Social Issues and Environment: Concept of Sustainable Development, Urban problem related to energy, Water Conservation, Wasteland reclamation, Resettlement and Rehabilitation, Climate Change, Nuclear Accidents, Consumerism and Waste Products, Laws related to Environment, Pollution, Forest and Wild life, Environmental Impact Assessment",
         "units4": "Human Population and Environment: Population Growth, Human Rights, Family WelfareProgrammes, Environment and Human Health, HIV/AIDS, Women and Child Welfare, Role of IT"
+      }
+    },
+
+
+
+
+
+    
+    "code11": {
+      "Subject": "Data Structure",
+      "Notes": {
+        "units1": {
+          "notes1": "https://drive.google.com/file/d/12vfVWk2Im4ofPQ5VvStayrfonHFbr3Hb/view?usp=drive_link"
+        },
+        "units2": {
+          "notes1": "https://drive.google.com/file/d/12vfVWk2Im4ofPQ5VvStayrfonHFbr3Hb/view?usp=drive_link"
+        },
+        "units3": {
+          "notes1": "https://drive.google.com/file/d/1tpAxbsGhCAIW4CsuzhKHUgTy79AQ2YEP/view?usp=sharing"
+        },
+        "units4": {
+          "notes1": "#"
+        }
+      },
+      "Mid-Sem": {
+        "pdf": "https://drive.google.com/file/d/1zEfM3kKMbT_ZpOlpdW1-RDp0qn_l3a95/view?usp=sharing"
+      },
+      "Viva": {
+        "notes1": "https://drive.google.com/file/d/1zvG5RXS3SucFaNWVuRCkmssvNEjyj8X8/view?usp=sharing"
+      },
+
+      "Aakash": "https://drive.google.com/file/d/1zEfM3kKMbT_ZpOlpdW1-RDp0qn_l3a95/view?usp=sharing",
+      "syllabus": {
+        "units1": "Overview of data structure, Basics of Algorithm Analysis including Running Time Calculations, Abstract Data Types Arrays, Arrays and Pointers, Multidimensional Array,  String processing, General Lists and List ADT, List  manipulations, Single, double and circular lists. Stacks and Stack ADT, Stack Manipulation, Prefix, infix and postfix expressions, recursion. Queues and Queue ADT, Queue manipulation.",
+        
+        "units2": "Under Process",
+        
+        "units3": "Sorting concept, order, stability, Selection sorts (straight, heap), insertion sort (Straight Insertion, Shell sort), Exchange Sort (Bubble, quicksort), Merge sort (External Sorting) (Natural merge, balanced merge and polyphase merge). Searching – List search, sequential search, binary search, hashing methods, collision resolution in hashing",
+        
+        "units4": "Under Process"
       }
     }
   }
