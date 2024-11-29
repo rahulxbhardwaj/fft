@@ -19,6 +19,11 @@ const Header = () => {
         </Link>
       )}
 
+      {/* New external link */}
+      <a href="https://drive.google.com/drive/folders/1NiNK8YpyjZBz3Ut_IB8LDzcSwhrg7sFN?usp=sharing" target="_blank" rel="noopener noreferrer">
+        All in One
+      </a>
+
       {isAuthenticated ? (
         <>
           <a href="#" onClick={(e) => {
