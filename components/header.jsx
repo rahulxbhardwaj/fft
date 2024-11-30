@@ -24,6 +24,10 @@ const Header = () => {
         All in One
       </a>
 
+      <a href="https://drive.google.com/drive/folders/1dveGWTyop7e_Yi8V-lZYfOrotmHUsIio?usp=sharing" target="_blank" rel="noopener noreferrer">
+        2nd Year
+      </a>
+
       {isAuthenticated ? (
         <>
           <a href="#" onClick={(e) => {
